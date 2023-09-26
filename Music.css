@@ -1,0 +1,150 @@
+/*javascriptpro_*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+margin:0;    
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#0098C7;  
+font-family: 'poppins', sans-serif;
+}
+
+.container{
+padding:20px;
+height:380px;
+width:360px;
+background:#007296;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+border-radius:7px;
+box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .image-box img{
+height:300px; 
+width:300px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.container .pre-container{
+height:285px;   
+width:100%;
+background: rgba(255, 255, 255, 0.1);
+box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
+border-top:1px solid rgba(255, 255, 255, 0.5);
+border-bottom-left-radius:7px;
+border-bottom-right-radius:7px;
+position:absolute;
+left:0;
+margin-top:75px;
+overflow:hidden;
+}
+
+.container .pre-container .progress-area{
+height:16px;  
+width:100%;
+position:absolute;
+bottom:0;
+border-bottom-left-radius:7px;
+border-bottom-right-radius:7px;
+background:#8FDFE6;
+cursor:pointer;
+}
+
+.container .pre-container .progress-area .progress-bar{
+height:16px; 
+width:0%;
+background:#E8F7FA;
+border-bottom-left-radius:7px;
+cursor:pointer;
+}
+
+.container .pre-container .progress-area .curr-time{
+position:absolute;
+color:#E8F7FA;
+margin-top:-24px;
+margin-left:17px;
+font-size:14px;
+font-weight:300;
+}   
+
+.container .pre-container .progress-area .total-time{
+position:absolute; 
+color:#E8F7FA;
+margin-top:-24px;
+position:absolute;
+right:17px;
+font-size:14px;
+font-weight:300;
+}
+
+.container .pre-container .song-name{
+font-weight:400;
+margin-top:35px;
+text-align:center;
+color:#E8F7FA;
+font-size:19px;
+letter-spacing:1px;
+}
+
+.container .pre-container .artist-name{
+font-weight:300;
+margin-top:4px;
+text-align:center;
+color:#E8F7FA;
+font-size:12px;  
+letter-spacing:1px;
+}
+
+.container .pre-container .btns{
+height:100px;    
+width:100%;
+margin-top:30px;
+display:flex;
+align-items:center;
+}
+
+.container .pre-container .btns .play-pause-btn{
+height:75px;  
+width:75px;
+border-radius:100%;
+border:1px solid #E8F7FA;
+display:flex;
+align-items:center;
+justify-content:center;
+color:#E8F7FA;
+font-size:28px;
+position:absolute;
+left:50%;
+transform:translate(-50%,-50%);
+margin-top:72px;
+cursor:pointer;
+}
+
+.container .pre-container .btns .play-pause-btn i{
+position:absolute;        
+}
+
+.container .pre-container .btns .play-pause-btn .fa-pause{
+display:none;   
+}
+
+.container .fa-backward-step,.container .fa-forward-step{
+color:#E8F7FA;   
+font-size:40px;
+margin-left:85px;
+cursor:pointer;
+}
+
+.container .fa-forward-step{
+margin-left:138px;        
+}
